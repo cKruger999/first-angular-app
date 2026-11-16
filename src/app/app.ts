@@ -25,5 +25,8 @@ export class App {
     const savings = income - expenses;
     return (savings / income) * 100;
   }
+  formatCurrency(amount: number, options: any): string {
+    return new Intl.NumberFormat(options.locale, options).format(amount);
+  }
 }
 

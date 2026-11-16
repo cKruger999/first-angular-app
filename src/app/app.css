@@ -1,0 +1,112 @@
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6fb;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #17243d;
+  color: white;
+  padding: 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #cbd5e1;
+
+  padding: 15px;
+  border-radius: 10px;
+
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #293b5c;
+  color: white;
+}
+
+.nav-link.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 15px;
+  background-color: #293b5c;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  min-width: 0;
+}
+
+.balance-card {
+    background-color: #e0f7ef;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.balance-card h3 {
+    color: #334155;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.balance-card h1 {
+    color: #0f172a;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.balance-card p {
+    color: #059669;
+    font-size: 14px;
+}
+@media (max-width: 700px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+  }
+
+  .brand {
+    margin-bottom: 20px;
+  }
+
+  .navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}

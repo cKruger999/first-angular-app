@@ -1,6 +1,67 @@
-<h1>Welcome to my Finance Tracker</h1>
-<h2>Hello, {{username}}!</h2>
-<p>Your current balance is: R{{balance}}</p>
-<p>Your monthly income is: R{{monthlyIncome}}</p>
-<p>Your monthly expenses are: R{{monthlyExpenses}}</p>
-<p>Your savings are: {{calculateSavingsPercentage(monthlyIncome, monthlyExpenses)}}%</p>
+<div class="dashboard-container">
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <h2>Finance Tracker</h2>
+    </div>
+
+    <nav class="navigation">
+
+      <a href="#" class="nav-link active">
+        🏠 Dashboard
+      </a>
+
+      <a href="#" class="nav-link">
+        💳 Transactions
+      </a>
+
+      <a href="#" class="nav-link">
+        📊 Budgets
+      </a>
+
+      <a href="#" class="nav-link">
+        📈 Reports
+      </a>
+
+      <a href="#" class="nav-link">
+        ⚙️ Settings
+      </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <h3>Plan. Track. Save.</h3>
+      <p>Build a better financial future.</p>
+    </div>
+    >
+
+  </aside>
+
+  <main class="main-content">
+
+    <h1>Welcome back, {{ username }}!</h1>
+
+    <p>Here's your financial overview.</p>
+
+    <div class="balance-card">
+
+      <h3>Current Balance</h3>
+
+      <h1></h1>
+
+      <p>↑ 12% compared to last month</p>
+
+    </div>
+    <div class = "income-card">
+      
+      <h3>Total Income</h3>
+
+      <h1></h1>
+
+      <p>↑ 8% compared to last month</p>
+    </div>
+
+  </main>
+
+</div>
